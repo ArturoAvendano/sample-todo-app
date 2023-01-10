@@ -1,6 +1,6 @@
 pipeline {
     agent {
-         docker { image 'centos/python-27-centos7:latest' }
+         docker { image 'python:latest' }
      }
     environment {
         LT_BUILD_NAME = "lambdatest-pipeline"
