@@ -1,7 +1,6 @@
+env.DOCKER_HOST = 'tcp:172.18.0.3:2376'
 pipeline {
     agent docker{
-        script{
-            withDockerServer([uri: "tcp:172.18.0.3:2376"]) }
         image 'python:latest'
      }
     environment {
