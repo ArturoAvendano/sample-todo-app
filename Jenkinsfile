@@ -1,7 +1,7 @@
 pipeline {
-    agent any {
+    agent {
         withDockerServer([uri: "tcp:172.18.0.3:2376"]) 
-         docker { image 'python:latest' }
+        image 'python:latest'
      }
     environment {
         LT_BUILD_NAME = "lambdatest-pipeline"
