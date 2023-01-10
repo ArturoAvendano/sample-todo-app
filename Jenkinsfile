@@ -1,5 +1,6 @@
 pipeline {
     agent {
+        withDockerServer([uri: "tcp:172.18.0.3:2376"]) 
          docker { image 'python:latest' }
      }
     environment {
