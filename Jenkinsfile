@@ -1,4 +1,4 @@
-
+env.DOCKER_HOST = 'tcp://0.0.0.0:2375'
 pipeline {
     agent{
     docker{
