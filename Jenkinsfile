@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        docker { image 'ubuntu:latest' }
-    }
+    agent any
     environment {
         LT_BUILD_NAME = "lambdatest-pipeline"
     }
