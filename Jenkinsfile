@@ -1,8 +1,10 @@
 env.DOCKER_HOST = 'tcp:172.18.0.3:2376'
 pipeline {
-    agent docker{
+    agent{
+    docker{
         image 'python:latest'
      }
+    }
     environment {
         LT_BUILD_NAME = "lambdatest-pipeline"
     }
